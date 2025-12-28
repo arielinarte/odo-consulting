@@ -70,4 +70,53 @@ document.addEventListener('DOMContentLoaded', () => {
         // Run auto-scroll every 1.5 seconds
         setInterval(updateSlider, 1500);
     }
+
+    // Hero Carousel
+    const heroTrack = document.querySelector('.hero-carousel .carousel-track');
+    const heroSlides = document.querySelectorAll('.hero-carousel .carousel-slide');
+    const prevBtn = document.querySelector('.carousel-prev');
+    const nextBtn = document.querySelector('.carousel-next');
+
+    if (heroTrack && heroSlides.length > 0) {
+        let heroIndex = 0;
+        const totalHeroSlides = heroSlides.length;
+        let slideInterval;
+
+        function updateHeroSlider() {
+            heroTrack.style.transform = `translateX(-${heroIndex * 100}%)`;
+        }
+
+        function nextSlide() {
+            heroIndex = (heroIndex + 1) % totalHeroSlides;
+            updateHeroSlider();
+        }
+
+        function prevSlide() {
+            heroIndex = (heroIndex - 1 + totalHeroSlides) % totalHeroSlides;
+            updateHeroSlider();
+        }
+
+        function resetTimer() {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlide, 1600);
+        }
+
+        // Event Listeners
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                nextSlide();
+                resetTimer();
+            });
+        }
+
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                prevSlide();
+                resetTimer();
+            });
+        }
+
+        // Start Auto Slide
+        slideInterval = setInterval(nextSlide, 1600);
+    }
 });
