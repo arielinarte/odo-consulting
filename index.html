@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Odoo Consulting - Transformá tu operación con Odoo ERP. Implementación, migración y soporte experto en Argentina.">
+    <title>Odoo Consulting | Implementación ERP en Argentina</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icons fallback (using simple inline SVG or FontAwesome if needed later, kept minimal for now) -->
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span>Odoo</span> Consulting
+            </a>
+
+            <div class="hamburger">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="services.html" class="nav-link">Servicios</a>
+                <a href="cases.html" class="nav-link">Casos</a>
+                <a href="#about" class="nav-link">Sobre Nosotros</a>
+                <a href="#contact" class="btn btn-primary">Diagnóstico Gratis</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="section hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1>Transformá tu Distribución con Odoo</h1>
+                    <p class="hero-sub">Automatiza facturación, inventario y contabilidad. De 15 horas a 2 horas
+                        semanales.</p>
+                    <p class="hero-body">Implementamos Odoo en PYMEs de Argentina. Sistema integrado, ROI en 6-8 meses.
+                    </p>
+
+                    <div class="hero-actions" style="margin-bottom: 40px;">
+                        <a href="#contact" class="btn btn-primary">Agendar Diagnóstico Gratis</a>
+                        <a href="#how-it-works" class="link-arrow">Ver cómo funciona &rarr;</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <!-- Placeholder for Odoo Dashboard Screenshot -->
+                    <div class="hero-image-placeholder"
+                        style="overflow: hidden; background: none; box-shadow: var(--shadow-hover);">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop"
+                            alt="Financial Dashboard Odoo" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem/Solution Section -->
+    <section class="section bg-secondary" id="problem-solution">
+        <div class="container">
+            <div class="prob-sol-layout"
+                style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+                <!-- Left: Content Cards -->
+                <div class="prob-content" style="display: flex; flex-direction: column; gap: 30px;">
+                    <!-- 1. Problema -->
+                    <div class="card">
+                        <span class="card-icon">📉</span>
+                        <h3>¿Por Qué Excel No Escala?</h3>
+                        <ul class="card-list">
+                            <li>15h/semana perdidas en manuales</li>
+                            <li>5% tasa de error humano</li>
+                            <li>Sin visibilidad real del stock</li>
+                        </ul>
+                    </div>
+
+                    <!-- 2. Solución (Destacada) -->
+                    <div class="card highlight">
+                        <span class="card-icon">🚀</span>
+                        <h3 style="color: var(--primary);">Odoo: Sistema Integrado</h3>
+                        <ul class="card-list">
+                            <li>Facturación automatizada 100%</li>
+                            <li>Inventario en tiempo real</li>
+                            <li>Contabilidad integrada</li>
+                        </ul>
+                    </div>
+
+                    <!-- 3. Resultado -->
+                    <div class="card">
+                        <span class="card-icon">💰</span>
+                        <h3>Tu Transformación</h3>
+                        <ul class="card-list">
+                            <li>Ahorro de 13h semanales</li>
+                            <li>96% reducción de errores</li>
+                            <li>ROI en 6.8 meses</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right: Images -->
+                <div class="prob-images" style="display: flex; flex-direction: column; gap: 30px;">
+                    <div style="position: relative;">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop"
+                            alt="Toma de Decisiones"
+                            style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-soft);">
+                        <div
+                            style="background: rgba(255,255,255,0.9); padding: 10px 20px; border-radius: 8px; position: absolute; bottom: 20px; left: 20px; backdrop-filter: blur(4px); box-shadow: var(--shadow-soft);">
+                            <strong>Decisiones Críticas</strong>
+                        </div>
+                    </div>
+                    <div
+                        style="position: relative; background: #fff; padding: 20px; border-radius: 12px; box-shadow: var(--shadow-soft); display: flex; flex-direction: column; align-items: center;">
+                        <h4 style="color: #e53935; margin-bottom: 5px;">Caída de Ventas</h4>
+                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 20px;">Proyección Sin Sistema
+                            (2024-2025)</p>
+
+                        <!-- SVG Chart -->
+                        <svg viewBox="0 0 300 150" width="100%" height="auto" style="border-bottom: 1px solid #eee;">
+                            <!-- Grid lines -->
+                            <line x1="30" y1="130" x2="280" y2="130" stroke="#eee" stroke-width="1" />
+                            <line x1="30" y1="30" x2="280" y2="30" stroke="#eee" stroke-width="1"
+                                stroke-dasharray="4" />
+
+                            <!-- Bars -->
+                            <!-- 2024: 100% height (y=30, height=100) -->
+                            <rect x="70" y="30" width="60" height="100" fill="#218084" rx="4" opacity="0.5" />
+                            <text x="100" y="145" text-anchor="middle" font-size="12" fill="#5E5240">2024</text>
+
+                            <!-- 2025: 65% height (Drop 35%) => y=65, height=65 -->
+                            <rect x="180" y="65" width="60" height="65" fill="#e53935" rx="4" />
+                            <text x="210" y="145" text-anchor="middle" font-size="12" fill="#5E5240">2025</text>
+
+                            <!-- Drop indicator -->
+                            <path d="M130 50 Q 155 40 175 60" stroke="#e53935" stroke-width="2" fill="none"
+                                stroke-dasharray="4" />
+                            <text x="260" y="60" fill="#e53935" font-weight="bold" font-size="14">-35%</text>
+                        </svg>
+
+                        <div
+                            style="background: rgba(229, 57, 53, 0.1); padding: 5px 10px; border-radius: 4px; margin-top: 15px;">
+                            <strong style="color: #e53935; font-size: 0.9rem;">📉 Pérdida Crítica</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metrics Stats -->
+    <section class="metrics-section">
+        <div class="container">
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <h4>85%</h4>
+                    <p>Reducción Tiempo Manual</p>
+                </div>
+                <div class="metric-item">
+                    <h4>96%</h4>
+                    <p>Menos Errores</p>
+                </div>
+                <div class="metric-item">
+                    <h4>6.8</h4>
+                    <p>Meses Payback Promedio</p>
+                </div>
+                <div class="metric-item">
+                    <h4>10+</h4>
+                    <p>Clientes en Argentina</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works (Timeline) Section -->
+    <section class="section" id="how-it-works">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 60px;">Cómo Trabajamos (Metodología 4 Fases)</h2>
+            <div class="timeline">
+                <!-- Step 1 -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-step">Semana 1: Diagnóstico</span>
+                        <h3>Entendimiento Profundo</h3>
+                        <p>Analizamos tus flujos actuales, puntos de dolor y cuellos de botella para diseñar la solución
+                            exacta.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-step">Semana 2-3: Planificación</span>
+                        <h3>Arquitectura de Solución</h3>
+                        <p>Diseñamos el roadmap de implementación y configuramos el entorno de pruebas personalizado.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-step">Semana 4-8: Implementación</span>
+                        <h3>Setup & Migración</h3>
+                        <p>Configuración final, carga de datos históricos y capacitación intensiva a tu equipo.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-step">Mes 3+: Optimización</span>
+                        <h3>Soporte y Escalamiento</h3>
+                        <p>Monitorizamos el uso, ajustamos detalles y te acompañamos en el crecimiento continuo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Section -->
+    <section class="section bg-highlight" id="cases">
+        <div class="container">
+            <div class="case-study-card fade-in">
+                <div class="case-content">
+                    <span style="color: var(--primary); font-weight: 600; margin-bottom: 8px;">CASO DE ÉXITO</span>
+                    <h2>Distribuidora pasó de Caos a Eficiencia</h2>
+                    <p>Distribuidora XYZ, con 25 empleados, sufría por procesos manuales que limitaban su crecimiento.
+                    </p>
+
+                    <div class="stat-grid">
+                        <div class="stat-box">
+                            <strong>15h a 2h</strong>
+                            <span>Tiempo de facturación semanal</span>
+                        </div>
+                        <div class="stat-box">
+                            <strong>40%</strong>
+                            <span>Crecimiento sin personal extra</span>
+                        </div>
+                    </div>
+
+                    <div class="quote">
+                        "Antes Excel era nuestro enemigo, hoy Odoo es nuestro socio estratégico."
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary">Ver Caso Completo</a>
+                </div>
+                <div class="case-image">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop"
+                        alt="Gerente General" style="aspect-ratio: 1/1;">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=400&auto=format&fit=crop"
+                        alt="Grafico Ventas 2024-2025" style="aspect-ratio: 16/9;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="why-us-grid">
+                <div class="card why-card fade-in">
+                    <span class="why-icon">🏆</span>
+                    <h3>Expertos Certificados</h3>
+                    <p>Más de 50 implementaciones exitosas. Conocemos cada rincón de Odoo para adaptarlo a tu realidad.
+                    </p>
+                </div>
+                <div class="card why-card fade-in">
+                    <span class="why-icon">⚙️</span>
+                    <h3>Metodología Probada</h3>
+                    <p>Nuestro proceso de 4 fases elimina la incertidumbre y garantiza una transición suave.</p>
+                </div>
+                <div class="card why-card fade-in">
+                    <span class="why-icon">📈</span>
+                    <h3>ROI Garantizado</h3>
+                    <p>No solo implementamos software; optimizamos procesos para que recuperes tu inversión en meses.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section bg-secondary" id="testimonials">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 60px;">Lo Que Dicen Nuestros Clientes</h2>
+
+            <div class="testimonials-slider">
+                <div class="testimonial-track">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"La mejor inversión del año. Pasamos de perder días en Excel a tener
+                            todo en un clic. El equipo de Odoo Consulting fue impecable."</p>
+                        <div class="client-info">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
+                                alt="Cliente">
+                            <span class="client-name">Juan Pérez</span>
+                            <span class="client-role">Gerente General, Logística Sur</span>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"La migración fue transparente y sin interrupciones. Ahora tenemos
+                            control total sobre nuestro inventario en tiempo real."</p>
+                        <div class="client-info">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop"
+                                alt="Cliente">
+                            <span class="client-name">María Rodriguez</span>
+                            <span class="client-role">CFO, Distribuidora Norte</span>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"El soporte post-implementación hace la diferencia. Siempre están
+                            disponibles para optimizar nuestros flujos de trabajo."</p>
+                        <div class="client-info">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop"
+                                alt="Cliente">
+                            <span class="client-name">Carlos Mendez</span>
+                            <span class="client-role">Director de Operaciones, TechSolutions</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Simple dots for visual only, JS implementation would be needed for real slider logic -->
+                <div class="slider-dots">
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" id="faq">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 60px;">Preguntas Frecuentes</h2>
+            <div class="faq-container">
+                <details>
+                    <summary>¿Cuál es la inversión promedio?</summary>
+                    <div class="faq-answer">
+                        Para una implementación típica en una PYME, la inversión ronda los USD 12k-15k, con un retorno
+                        estimado en menos de 8 meses.
+                    </div>
+                </details>
+                <details>
+                    <summary>¿Cuánto tiempo demora la implementación?</summary>
+                    <div class="faq-answer">
+                        Nuestros proyectos suelen durar entre 4 y 8 semanas, dependiendo de la complejidad de la
+                        migración de datos.
+                    </div>
+                </details>
+                <details>
+                    <summary>¿Ofrecen soporte post-implementación?</summary>
+                    <div class="faq-answer">
+                        Sí, incluimos 90 días de soporte gratuito y luego ofrecemos planes de mantenimiento para
+                        acompañar tu crecimiento.
+                    </div>
+                </details>
+                <details>
+                    <summary>¿Se integra con mi E-commerce?</summary>
+                    <div class="faq-answer">
+                        Absolutamente. Odoo se conecta nativamente con los principales e-commerce o podemos usar su
+                        propio módulo de tienda online.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section final-cta" id="contact">
+        <div class="container">
+            <h2>¿Listo para transformar tu operación?</h2>
+
+            <form class="cta-form"
+                onsubmit="event.preventDefault(); alert('Gracias por tu interés. Nos pondremos en contacto pronto.');">
+                <div class="form-group">
+                    <label for="name">Nombre Completo</label>
+                    <input type="text" id="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Corporativo</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Teléfono / WhatsApp</label>
+                    <input type="tel" id="phone" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">Empresa y Cargo</label>
+                    <input type="text" id="company" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">Agendar Diagnóstico Gratis</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="logo" style="color: #fff;">
+                        <span>Odoo</span> Consulting
+                    </a>
+                    <p style="color: rgba(255,255,255,0.7); margin-top: 16px;">
+                        Transformando operaciones de PYMEs en Argentina con tecnología Odoo. expertos certificados y
+                        metodología probada.
+                    </p>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li>📍 Av. Corrientes 1234, Buenos Aires</li>
+                        <li>📧 contacto@odooconsulting.com</li>
+                        <li>📱 +54 9 11 1234-5678</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Odoo Consulting. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | Odoo Consulting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .service-card-lg {
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            display: flex;
+            flex-direction: column;
+            transition: var(--transition);
+        }
+
+        .service-card-lg:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .service-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .service-content {
+            padding: 32px;
+        }
+
+        .service-content h3 {
+            margin-bottom: 16px;
+            color: var(--primary);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><span>Odoo</span> Consulting</a>
+            <div class="hamburger">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </div>
+            <nav class="nav-menu">
+                <a href="services.html" class="nav-link active">Servicios</a>
+                <a href="cases.html" class="nav-link">Casos</a>
+                <a href="about.html" class="nav-link">Sobre Nosotros</a>
+                <a href="index.html#contact" class="btn btn-primary">Diagnóstico Gratis</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section bg-highlight">
+        <div class="container" style="text-align: center;">
+            <h1>Nuestros Servicios</h1>
+            <p style="max-width: 600px; margin: 0 auto; margin-bottom: 20px;">Soluciones integrales diseñadas para
+                impulsar tu crecimiento financiero y operativo.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="services-grid">
+                <!-- Servicio 1: Licencias -->
+                <div class="service-card-lg fade-in">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=800&auto=format&fit=crop"
+                        alt="Software y Licencias" class="service-img">
+                    <div class="service-content">
+                        <h3>Licencias Originales Odoo</h3>
+                        <p>Como partners oficiales, gestionamos tus licencias Enterprise con soporte directo. Aseguramos
+                            que tengas siempre la última versión con todas las funcionalidades de seguridad y
+                            rendimiento activas.</p>
+                    </div>
+                </div>
+
+                <!-- Servicio 2: Capacitación -->
+                <div class="service-card-lg fade-in">
+                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=800&auto=format&fit=crop"
+                        alt="Capacitación Empresarial" class="service-img">
+                    <div class="service-content">
+                        <h3>Capacitación</h3>
+                        <p>Entrenamiento especializado para tu equipo. Desde el uso básico hasta configuraciones
+                            avanzadas. Nos aseguramos de que cada empleado se sienta cómodo y productivo con la nueva
+                            herramienta.</p>
+                    </div>
+                </div>
+
+                <!-- Servicio 3: Consultoría -->
+                <div class="service-card-lg fade-in">
+                    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop"
+                        alt="Consultoría de Negocios" class="service-img">
+                    <div class="service-content">
+                        <h3>Consultoría Empresarial</h3>
+                        <p>No solo instalamos software. Analizamos tus procesos de negocio, flujos financieros y cadena
+                            de suministro para proponer optimizaciones que impacten directamente en tu rentabilidad.</p>
+                    </div>
+                </div>
+
+                <!-- Servicio 4: Diagnóstico -->
+                <div class="service-card-lg fade-in">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop"
+                        alt="Diagnóstico Financiero" class="service-img">
+                    <div class="service-content">
+                        <h3>Diagnóstico</h3>
+                        <p>¿No estás seguro de qué necesitas? Realizamos un diagnóstico 360° de tu situación actual.
+                            Identificamos cuellos de botella, fugas de dinero y oportunidades de automatización
+                            inmediata.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 60px;">
+                <a href="contact.html" class="btn btn-primary">Solicitar Presupuesto</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-main section">
+        <div class="container">
+            <p>&copy; 2024 Odoo Consulting. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
