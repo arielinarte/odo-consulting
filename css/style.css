@@ -4,27 +4,24 @@
 */
 
 :root {
-    /* Colors */
-    --primary: #218084;
-    /* Teal */
-    --primary-dark: #1A6669;
-    --secondary: #5E5240;
-    /* Brown */
+    /* Colors - Premium Corporate Palette */
+    --primary: #0A3D5D; /* Deep Corporate Blue */
+    --primary-light: #1A547A; /* Lighter Blue */
+    --secondary: #2C6E49; /* Sage Green for accents/growth */
+    
+    --bg-main: #FFFFFF; /* Clean White */
+    --bg-secondary: #F8F9FA; /* Very light gray */
+    --bg-highlight: #F0F4F8; /* Soft blue-gray */
 
-    --bg-main: #FCFCF9;
-    /* Cream Light */
-    --bg-secondary: #FFFFF5;
-    --bg-highlight: #e8f4f8;
-    /* Light Blue */
-
-    --text-main: #134252;
-    /* Charcoal */
-    --text-secondary: #62707D;
-    /* Slate */
+    --text-main: #1E293B; /* Slate 800 */
+    --text-secondary: #64748B; /* Slate 500 */
+    --text-muted: #94A3B8; /* Slate 400 */
     --text-white: #FFFFFF;
+    
+    --border-color: #E2E8F0;
 
     /* Spacing */
-    --section-padding: 80px;
+    --section-padding: 100px;
     --container-width: 1200px;
 
     /* Typography */
@@ -32,10 +29,10 @@
 
     /* Effects */
     --radius-sm: 8px;
-    --radius-md: 12px;
-    --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05);
-    --shadow-hover: 0 10px 30px rgba(0, 0, 0, 0.08);
-    --transition: all 0.3s ease;
+    --radius-md: 16px; /* slightly more modern rounded */
+    --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    --shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Reset & Base */
@@ -138,12 +135,13 @@ p {
 .btn-primary {
     background-color: var(--primary);
     color: var(--text-white);
+    box-shadow: 0 4px 14px 0 rgba(10, 61, 93, 0.39);
 }
 
 .btn-primary:hover {
-    background-color: var(--primary-dark);
+    background-color: var(--primary-light);
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(33, 128, 132, 0.3);
+    box-shadow: 0 6px 20px rgba(10, 61, 93, 0.23);
 }
 
 .btn-secondary {
