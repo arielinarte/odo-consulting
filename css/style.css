@@ -577,15 +577,19 @@ header .container {
 @media (max-width: 900px) {
     .case-study-card {
         grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
     }
 
     .case-content {
         padding: 40px;
+        order: 2;
     }
 
     .case-image {
         height: 300px;
         min-height: auto;
+        order: 1;
     }
 }
 
