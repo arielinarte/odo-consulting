@@ -218,6 +218,21 @@ header .container {
     cursor: pointer;
 }
 
+/* Add the desktop version of layout styles that were removed from inline html */
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.prob-sol-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     h1 {
@@ -243,6 +258,11 @@ header .container {
         box-shadow: var(--shadow-soft);
         transform: translateY(-150%);
         transition: var(--transition);
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-menu.active {
+        transform: translateY(0);
     }
 
     /* Hero Section */
@@ -251,8 +271,12 @@ header .container {
         padding-bottom: 80px;
     }
 
+    .prob-sol-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
     .hero-grid {
-        display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 60px;
         align-items: center;
@@ -545,6 +569,26 @@ header .container {
     box-shadow: var(--shadow-hover);
 }
 
+.case-study-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+@media (max-width: 768px) {
+    .case-study-details {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    .case-study-details > div {
+        padding: 12px !important;
+    }
+    .case-study-details p {
+        font-size: 0.85rem !important;
+    }
+}
+
 .stat-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -617,6 +661,20 @@ header .container {
 
 @media (max-width: 768px) {
     .why-us-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Team Grid */
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .team-grid {
         grid-template-columns: 1fr;
     }
 }
@@ -828,8 +886,10 @@ details[open] .faq-answer {
 .footer-grid {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    gap: 60px;
-    margin-bottom: 60px;
+    gap: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .footer-info p {
